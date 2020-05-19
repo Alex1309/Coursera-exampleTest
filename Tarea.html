@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Media Queries</title>
+<style >
+/******* Base Styles *******/
+*{
+	box-sizing: border-box;
+}
+h1{
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+p{
+	background-color: #B9B9B9;
+	width: 90%;
+	height: 90%;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 2px solid black;
+	border-left: 2px solid black;
+	border-right:2px solid black;
+	padding: 6px 5px 15px 20px;
+
+}
+
+.chicken{
+	background-color: yellow;
+	width: 20%;
+	height: 100%;
+	padding: 2px;
+	text-align: center;
+	float: right;
+}
+.sushi{
+	background-color: pink;
+	width: 20%;
+	height: 100%;
+	padding: 2px;
+	text-align: center;
+	float: right;
+}
+.beef{
+	background-color: orange;
+	width: 20%;
+	height: 100%;
+	padding: 2px;
+	text-align: center;
+	float: right;
+}
+.dd{
+	background-color: #B9B9B9;
+	width: 90%;
+	height: 25px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: 2px solid black;
+	border-left: 2px solid black;
+
+}
+
+/************************************/
+.row{
+	width: 100%;
+}
+/*********** Large devices only ********/
+@media(min-width: 992px){
+	.col-lg-4{
+		width: 33.33%;
+		float: left;
+	}
+	
+}
+/************ Medium devices only *************/
+
+@media(min-width: 768px) and (max-width: 991px){
+	.col-md-6{
+		width: 48.6%;
+		float: right;
+
+	}.col-md-12{
+		width: 102.6%;
+		float: left;
+	}
+	
+}
+@media(max-width: 767px){
+	.col-sm-12{
+		width: 100%;
+		float: left;
+	}
+	
+}
+</style>
+</head>
+<body>
+	<h1>Our Menu</h1>
+	<div class="row" >
+		<div class="col-lg-4 col-md-6 col-sm-12">
+			<div class="dd">
+				<p class="chicken">Chicken</p>
+			</div>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+           		Vivamus ornare felis at nibh faucibus rhoncus et eu lorem.
+           		Aliquam lacinia, mi quis euismod tempor, arcu nisi vulputate mi, feugiat iaculis risus nibh vitae lorem.
+           	 	Etiam finibus pharetra tincidunt. Quisque ac mi elit..
+         	</p>	
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-12">
+			<div class="dd">
+				<p class="beef"> Beef</p>
+			</div>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            	Vivamus ornare felis at nibh faucibus rhoncus et eu lorem.
+            	Aliquam lacinia, mi quis euismod tempor, arcu nisi vulputate mi, feugiat iaculis risus nibh vitae lorem.
+             	Etiam finibus pharetra tincidunt. Quisque ac mi elit..
+         	</p>
+        </div>
+		<div class="col-lg-4 col-md-12 col-sm-12">
+			<div class="dd">
+				<p class="sushi">Sushi</p>
+			</div>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            	Vivamus ornare felis at nibh faucibus rhoncus et eu lorem.
+            	Aliquam lacinia, mi quis euismod tempor, arcu nisi vulputate mi, feugiat iaculis risus nibh vitae lorem.
+            	Etiam finibus pharetra tincidunt. Quisque ac mi elit..
+         	</p>
+     	</div>
+	</div>
+</body>
+</html>
